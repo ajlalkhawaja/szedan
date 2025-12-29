@@ -21,7 +21,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $mail->isSMTP();
     $mail->Host       = 'szedan.com';          // Outgoing server
     $mail->SMTPAuth   = true;
-    $mail->Username   = 'bilalbaig28285@gmail.com';     // Full cPanel email account
+    $mail->Username   = 'zedanrentals@gmail.com';     // Full cPanel email account
     $mail->Password   = 'Pakistan123456';             // Mailbox password
     $mail->SMTPSecure = 'ssl';                        // SSL encryption
     $mail->Port       = 465;                          // SSL port
@@ -36,8 +36,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     ];
 
     // Recipients
-    $mail->setFrom('bilalbaig28285@gmail.com', 'sZedan'); 
-    $mail->addAddress('bilalbaig28285@gmail.com'); // Recipient 1
+    $mail->setFrom('zedanrentals@gmail.com', 'sZedan'); 
+    $mail->addAddress('zedanrentals@gmail.com'); // Recipient 1
     $mail->addAddress('ajlal.khawaja2@gmail.com'); // Recipient 1
 
         // Email content

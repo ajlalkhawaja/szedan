@@ -1120,7 +1120,9 @@ section,
 
 .services .card .card-img img {
   transition: 0.3s ease-in-out;
-  min-height: 300px;
+  width: 100%;
+  max-height: 310px;
+  min-height: 310px;
   object-fit: cover;
 }
 
@@ -1222,8 +1224,8 @@ section,
 }
 
 .features .features-item img {
-  border-radius: 100px;
-  min-height: 400px;
+  border-radius: 50px;
+  min-height: 350px;
   object-fit: contain;
   background-color: #fff;
 }
@@ -2033,4 +2035,19 @@ li a[aria-disabled="true"] {
   pointer-events: none;
   opacity: 0.9;
   color: var(--accent-color) !important;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: color-mix(in srgb, var(--default-color), transparent 25%) !important;
+}
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  color: color-mix(in srgb, var(--default-color), transparent 25%) !important;
+}
+
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+  color: color-mix(in srgb, var(--default-color), transparent 25%) !important;
 }
